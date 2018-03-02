@@ -1,6 +1,7 @@
 module.exports = {
     "globals": {
-        "angular": false
+        "angular": false,
+        "jwt_decode": false
     },
     "env": {
         "es6": true,
