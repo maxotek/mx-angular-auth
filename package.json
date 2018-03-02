@@ -1,9 +1,9 @@
 {
-  "name": "your-project-name",
+  "name": "mx-angular-auth",
   "private": false,
   "version": "1.0.0",
-  "description": "What your awesome project does",
-  "repository": "https://github.com/you/your-project-name",
+  "description": "AngularJS module for using token based authentication on a web API",
+  "repository": "https://github.com/maxotek/mx-angular-auth.git",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.8.0",
