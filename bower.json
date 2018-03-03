@@ -8,7 +8,16 @@
     "dependencies": {
         "angular": "v1.6.9",
         "ngstorage": "0.3.11",
-        "jwt-decode": "v2.2.0"
+        "jwt-decode": "v2.2.0",
+        "mx-angular-api": "../mx-angular-api"
     },
+    "ignore": [
+        "node_modules",
+        "src",
+        ".gitignore",
+        "package.json",
+        "gulpfile.js",
+        "build.conf.js"
+    ],
     "main": "dist/mx-angular-auth.js"
 }
