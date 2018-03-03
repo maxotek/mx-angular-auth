@@ -1,7 +1,7 @@
 {
     "name": "mx-angular-auth",
     "description": "AngularJS module for using token based authentication on a web API",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "homepage": "https://github.com/maxotek/mx-angular-auth",
     "license": "MIT",
     "private": false,
@@ -9,7 +9,7 @@
         "angular": "v1.6.9",
         "ngstorage": "0.3.11",
         "jwt-decode": "v2.2.0",
-        "mx-angular-api": "1.0.1"
+        "mx-angular-api": "1.0.2"
     },
     "ignore": [
         "node_modules",
