@@ -37,6 +37,16 @@
         }
 
         function restoreState() {
+            var accessToken = $localStorage.accessToken;
+            var jwt = jwt_decode(accessToken);
+
+            var now = new Date().getTime();
+            var expTime = parseInt(jwt.exp) * 1000;
+
+            if (now >= expTime) {
+                return;
+            }
+
             service.currentUser = angular.fromJson($localStorage.user);
             service.accessToken = angular.fromJson($localStorage.accessToken);
         }
