@@ -99,18 +99,22 @@
         }
 
         function restoreState() {
-            var accessToken = $localStorage.accessToken;
-            var jwt = jwt_decode(accessToken);
+            var accessToken = angular.fromJson($localStorage.accessToken);
 
-            var now = new Date().getTime();
-            var expTime = parseInt(jwt.exp) * 1000;
+            if (accessToken) {
+                var jwt = jwt_decode(accessToken);
 
-            if (now >= expTime) {
+                var now = new Date().getTime();
+                var expTime = parseInt(jwt.exp) * 1000;
+
+                if (now >= expTime) {
+                    return;
+                }
+            } else
                 return;
-            }
 
             service.currentUser = angular.fromJson($localStorage.user);
-            service.accessToken = angular.fromJson($localStorage.accessToken);
+            service.accessToken = accessToken;
         }
 
         function getCurrentUser() {
